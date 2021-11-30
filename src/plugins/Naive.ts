@@ -3,10 +3,12 @@ import {
     create,
     // component
     NButton,
+    NCard,
+    NBackTop,
 } from 'naive-ui';
 
 const naive = create({
-    components: [NButton],
+    components: [NButton, NCard, NBackTop],
 });
 
 export default naive;

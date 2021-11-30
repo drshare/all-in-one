@@ -14,5 +14,5 @@ const editor = useEditor((root) => Editor.make()
 </script>
 
 <template>
-    <VueEditor :editor="editor" />
+  <VueEditor :editor="editor" />
 </template>

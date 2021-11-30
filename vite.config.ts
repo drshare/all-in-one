@@ -18,7 +18,8 @@ export default defineConfig({
     css: {
         preprocessorOptions: {
             less: {
-                additionalData: '$injectedColor: orange;',
+                javascriptEnabled: true,
+                additionalData: `@import "${path.resolve(__dirname, 'src/assets/styles/var.less')}";`,
             },
         },
     },
