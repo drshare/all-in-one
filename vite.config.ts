@@ -6,12 +6,13 @@ import path from 'path';
 export default defineConfig({
     plugins: [vue()],
     server: {
-        host: '127.0.0.1',
+        host: '0.0.0.0',
         port: 9527,
     },
     resolve: {
         alias: {
             '@': path.resolve(__dirname, './src'),
+            '#': path.resolve(__dirname, './src/types'),
         },
         extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
     },

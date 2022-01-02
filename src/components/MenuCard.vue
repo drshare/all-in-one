@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { defineProps } from 'vue';
-
 const props = defineProps({
     menuOption: {
         type: Object,
@@ -18,11 +16,11 @@ const props = defineProps({
   />
 </template>
 <style lang="less">
-    .menu-card.n-card {
-        width: 30%;
-        border-radius: 4px;
-        & > .n-card-header > .n-card-header__main {
-            color: #fff;
-        }
-    }
+.menu-card.n-card {
+  width: 30%;
+  border-radius: 4px;
+  & > .n-card-header > .n-card-header__main {
+    color: #fff;
+  }
+}
 </style>

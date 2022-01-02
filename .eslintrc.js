@@ -17,8 +17,22 @@ module.exports = {
         'vue',
         '@typescript-eslint',
     ],
+    globals: {
+        defineProps: 'readonly',
+    },
     rules: {
         indent: [2, 4],
         'import/no-extraneous-dependencies': [2, { devDependencies: true }],
+    },
+    settings: {
+        'import/resolver': {
+            alias: {
+                map: [
+                    ['@', './src'],
+                    ['#', './src/types'],
+                ],
+                extensions: ['.ts', '.tsx', '.js', '.jsx', '.json', '.d.ts'],
+            },
+        },
     },
 };
